@@ -1,0 +1,58 @@
+<view class="tx">
+      <text>请确认以下信息：</text>
+    </view>
+<view class="content">
+  <view class="common">
+  <form bindsubmit="submitdate">
+    <view class="order">
+
+       <view class="date">
+        <view style="width:5%;"><image src="/imagess/number.jpg"> </image></view>
+          <view style="width:95%;"><input name="idName" bindinput="idNameInput" value='{{idN}}' placeholder="学号" placeholder-style="color:#eee" /></view>
+      </view>
+
+
+      <view class="date" style="margin-top:20rpx;">
+        <view style="width:20%;" class="Image"><image src="/imagess/school.png"> </image></view>
+        <view style="width:80%;"><picker bindchange="bindPickerChange" value="{{sN}}" range="{{array}}" >
+          <view class="picker">
+            {{array[sN]}}
+          </view>
+        </picker></view>
+      </view>
+
+
+      <view class="date" style="margin-top:20rpx;">
+        <view style="width:10%;"><image src="/imagess/xueyuan.png"></image></view>
+        <view style="width:90%;"><picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          {{multiArray[0][multiIndex[0]]}}
+        </view>
+        </picker></view>
+      </view>
+
+
+      <view class="date" style="margin-top:20rpx;">
+        <view style="width:10%;"><image src="/imagess/project.png"></image></view>
+        <view style="width:90%;"><picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          {{multiArray[1][multiIndex[1]]}}
+        </view>
+        </picker></view>
+      </view>
+
+      <view class="date" style="margin-top:20rpx;margin-bottom:20rpx;" >
+        <view style="width:10%;"><image src="/imagess/grade.png"> </image></view>
+        <view style="width:90%;"><picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          {{multiArray[2][multiIndex[2]]}}
+        </view>
+        </picker></view>
+      </view>
+     
+
+      <button form-type="submit">注册</button>
+      </view>
+  </form>
+  </view>
+  </view>

@@ -1,0 +1,66 @@
+/* pages/register/register.wxss */
+/**changeInfo.wxss**/
+page {
+  height: 100%;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.common{
+  position: relative;
+  padding: 0rpx 100rpx 1rpx 100rpx;
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+}
+
+.tx text {
+  text-align: left;
+  background: #fff;
+  top:0rpx;
+  font-size: 50rpx;
+  margin-top: 5rpx;
+
+}
+.order{
+margin-top:0rpx;
+background: #fff;
+padding:0rpx;
+}
+.order image{
+  width: 32px;
+  height: 32px;
+  padding-right: 0rpx;
+}
+
+.Image image{
+  width: 32px;
+  height: 32px;
+  margin-right: 40rpx;
+}
+.date{
+  display: flex;
+  flex-direction: row;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: rgb(99, 99, 99);
+  border-bottom: 1rpx solid rgb(99, 99, 99)
+}
+.date input{
+  padding-left: 20rpx;
+
+}
+.order button {
+  background: rgb(97, 151, 124);
+  color: #fff;
+}
+
+
+.picker {
+  width: 100%;
+  color: rgb(99, 99, 99);
+  font-size: 30rpx;
+ 
+}
+

@@ -1,0 +1,52 @@
+/**changeInfo.wxss**/
+page {
+  height: 100%;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+.common{
+  position: relative;
+  padding: 40rpx;
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+}
+.hr{
+  height: 1px;
+  background: #cecece;
+}
+
+.hr text {
+  position: absolute;
+  width: 200rpx;
+  text-align: center;
+  background: #eeeeee;
+  left: 37%;
+  top: 20rpx;
+
+}
+.order{
+margin-top:40rpx;
+background: #fff;
+padding:20rpx;
+}
+.order image{
+  width: 32px;
+  height: 38px;
+}
+.date{
+  display: flex;
+  align-items: center;
+  font-family: "微软雅黑";
+  font-size: 40rpx;
+  color: #448ef3;
+}
+.date input{
+  padding-left: 10rpx;
+}
+.order button {
+  background: #448ef3;
+  color: #fff;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "主页",
+  "navigationBarBackgroundColor": "#aaa",
+  "navigationBarTextStyle": "blank",
+  "enablePullDownRefresh": true
+}

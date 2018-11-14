@@ -1,0 +1,62 @@
+/**pages.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  width: 100%;
+  height: 260rpx;
+  background-color:rgb(235, 245, 235);
+
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 60rpx;
+  border-radius: 50%;
+}
+.userinfo-text {
+  margin-top: 60rpx;
+}
+ 
+.userinfo-nickname {
+  color:black;
+  margin-top: 120rpx;
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
+
+
+
+.userinfo-welcome {
+  font-size: 0.7rem;
+  color:rgb(185, 150, 33);
+}
+
+.style_1 {
+  width: 100%;
+  height: 20rpx;
+  background-color:grey;
+}
+
+.style_2 {
+  width: 100%;
+  height: 80rpx;
+  background-color:darkgray;
+}
+
+.style_3 {
+  width: 100%;
+  height: 80rpx;
+  background-color:white;
+}
+
+.userFunction {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.changeInfo {
+  margin: 20rpx;
+}

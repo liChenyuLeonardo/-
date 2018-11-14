@@ -1,0 +1,54 @@
+<swiper class='movie-swiper' indicator-dots='{{true}}'
+current='{{currentIndex}}'
+>
+  <swiper-item class='movie' wx:for="{{weeklyMovieList}}">
+      <image class='movie-image' src='{{item.imagePath}}'></image>
+  </swiper-item>
+</swiper>
+<view class='first'>
+  <view class='second'>
+      <view class='movie-words'>
+      <text class='festival'>  欢迎登陆北邮二手书交易平台  平台祝您中秋快乐(oﾟvﾟ)ノ       </text>
+      </view>
+      <view class='border'></view>
+      <view class='sousuo1'>
+       <view class='sousuo2'>
+         <view class='wenzi'>
+            <text></text>
+          </view>
+         <view class='xj'>
+          <image class='xj' src='/images/微信截图_20180925012636.png'></image>
+          </view>
+         <view class='sousuo3'>
+            <text style='color:white;font-size:18px;'>搜索</text>
+          </view>
+        </view>
+        <view class='textsousuo'>
+          <text class='t1' bindtap='hot'>热度</text>
+          <text class='t2' bindtap='f11'>猜你喜欢</text>
+          <text class='t3' bindtap='f12'>最新上新</text>
+        </view>
+      </view>
+      <view class='border'></view>
+      <view class='homework'>
+       <scroll-view class='homeworkzoo' scroll-y='true'>
+          <view class='hwcolumn' wx:for='{{homeworkcourse}}'>
+            <image class='hwpicture' src='{{item.imagePath}}'></image>
+            <view class='hwtext'>
+              <text class='hwsub'>{{item.homeworksubject}}</text>
+              <text class='hwnum'>目前共有{{item.homeworknumber}}书正在出售</text>
+            </view>
+          </view>
+        </scroll-view>
+        </view>
+     </view>
+  <view class='third'>
+    <view class='black1'></view>
+    <image class='person' bindtap="bindViewTap" src='/images/主页.jpg'></image>
+    <view class='black2'></view>
+    <view class='border'></view>
+    <image class='shop' src='/images/gwc.jpg'></image>
+    <view class='black3'></view>
+    <image class='time' src='/images/ls.jpg'></image>
+  </view>
+</view>

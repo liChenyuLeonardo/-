@@ -1,0 +1,58 @@
+<view class="content">
+  <view class="common">
+     <view class="hr"></view> 
+<form bindsubmit="post">
+<view class="postArea">
+  <view class="section">
+  <view class="section__title">*校区选择：</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+
+<view class="section">
+  <view class="section__title">*院系年级选择：</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+</view>
+<view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+
+<view class="section">
+  <view class="section__title">*售出类型选择：</view>
+  <picker value="{{typeIndex}}" range="{{typeArray}}" bindchange="bindTypeChange">
+    <view class="picker">
+      当前选择: {{typeArray[typeIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+
+<view class="section">
+  <view class="section__title">*新旧程度选择：</view>
+  <picker value="{{newIndex}}" range="{{newArray}}" bindchange="bindNewChange">
+    <view class="picker">
+      当前选择: {{newArray[newIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+
+<input placeholder="请输入书籍名(选填)" placeholder-style="color:#000" />
+<view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+
+<input placeholder="书籍信息描述(选填)" placeholder-style="color:#000" />
+<view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+
+<view class="btn-area">
+    <button formType="submit">确认发布</button>
+  </view>
+</view>
+</form>
+</view>
+</view>

@@ -1,0 +1,170 @@
+.movie-swiper{
+  height: 25vh;
+  margin: 0;
+}
+.movie{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: #eee;
+}
+.movie-image{
+  width: 100%;
+  height: 25vh
+}
+.movie-words{
+  height: 5vh;
+  background:rgb(48, 48, 48)
+}
+.first{
+  display: flex;
+  flex-direction: row;
+  height: 62vh;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  height: 75vh;
+}
+.third{
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 75vh;
+  background: black
+}
+.festival{
+  margin: 14px;
+  font-size: 13px;
+  color:#fff;
+}
+.sousuo1{
+  background: rgb(150, 150, 150);
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center
+}
+.sousuo2{
+  background: white;
+  border: 1px solid black;
+  height: 4vh;
+  width: 280px;
+  display: flex;
+  flex-direction: row
+}
+.sousuo3{
+  background: red;
+  height: 4vh;
+  width: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+.border{
+  height: 1px;
+  background: black
+}
+.wenzi{
+  background: transparent;
+  height: 4vh;
+  width: 220px;
+}
+.xj{
+  height: 20px;
+  width: 20px;
+}
+.textsousuo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center
+}
+.t1{
+  height: 3vh;
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+.t2{
+  height: 3vh;
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+.t3{
+  height: 3vh;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+.person{
+  height: 5vh;
+  width: 30px
+}
+.black1{
+  height: 8vh;
+  width: 30px
+}
+.shop{
+  height: 15vh;
+  width: 30px
+}
+.black2{
+  height: 2vh;
+  width: 30px
+}
+.black3{
+  height: 36vh;
+  width: 30px
+}
+.time{
+  height: 7vh;
+  width: 30px
+}
+.homework{
+  width: 345px;
+  height: 71vh;
+  background:rgb(131, 129, 129);
+  display: flex;
+  flex-direction: column
+}
+.homeworkzoo{
+  width: 345px;
+  height:60vh
+}
+.homeworkzoo view{
+  width: 345px;
+  height: 17vh
+}
+.hwcolumn{
+  height: 17vh;
+  width: 345px;
+  background: rgb(158, 157, 157);
+  display: flex;
+  flex-direction: row
+}
+.hwpicture{
+  height: 17vh;
+  width: 120px
+}
+.hwtext{
+  height: 17vh;
+  width: 225px;
+  margin: 0 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hwsub{
+  font-size: 30px
+}
+.hwnum{
+  font-size: 18px;
+  height: 6vh
+}
