@@ -1,0 +1,30 @@
+
+<!--Pages/list/list.wxml-->
+<view class='page'>
+  <view>
+        <view>
+            <view class='searcharea'>
+              <view class='liststyle_buttom'>
+              <view><image src='/images/searchlogo.jpg' style='width: 35rpx; height: 35rpx;'></image></view>
+              <view><input type='text' bindconfirm='bindblur' confirm-type='search' placeholder="搜索" placeholder-style="color:#eee"/></view>
+              </view>
+            </view> 
+         </view>
+  <view class='list_book'>
+    <view class='homework'>
+       <scroll-view class='homeworkzoo' scroll-y='true'>
+          <navigator url='/pages/book/book?book_name={{item.book_name}}' wx:for='{{list}}' wx:key='this' class='bookzoo'>
+ <view class='hwrow'>
+            <image wx:if="{{ item.image_url1 != null }}" src='https://www.lichenyu666.top/{{item.image_url1}}' class='hwpicture' style='width:150rpx;height:150rpx;'/>
+            <view class='hwtext' bindtap='book' data-book-name="{{item.book_name}}">
+              <text class='hwsub'>{{item.book_name}}</text>
+              <text style='font-size:30rpx;color:gray;height: 4vh;'>{{item.author}}</text>
+              <text class='hwnum'>{{item.press}}</text>
+            </view>
+    </view>
+          </navigator>
+        </scroll-view>
+      </view>
+    </view>
+</view>
+</view>

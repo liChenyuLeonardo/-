@@ -1,0 +1,63 @@
+<!--pages/book/book.wxml-->
+<view class='book_wxml'>
+<view>
+            <view class='searcharea'>
+              <view class='liststyle_buttom'>
+              <view><image src='/images/searchlogo.jpg' style='width: 35rpx; height: 35rpx;'></image></view>
+              <view><input type='text' bindconfirm='bindblur' confirm-type='search' placeholder="{{mid}}" placeholder-style="color:#eee"/></view>
+              </view>
+            </view> 
+         </view>
+<view class='box'>
+              <view wx:for='{{whattop}}' wx:key='this'>
+                <text class="hot  {{curNavId==item.id ? 'active_'+colors[index] : ''}}" data-id='{{item.id}}' data-index="{{item.id}}" bindtap="{{item.id==1 ? 'bindShowMsg' : 'switchtap'}}">{{item.name}}</text>
+              </view>
+            </view>
+<view class="select_box" wx:if="{{select}}">
+  <view class="select_one" bindtap="mySelect" data-name="价格升序">价格升序</view>        
+  <view class="select_one" bindtap="mySelect" data-name="价格降序">价格降序</view>
+</view>
+<view>
+<view wx:if="{{QueryStatus==1}}">
+<!-- 这里的wx:if是对三种搜索情况进行条件渲染（有/无搜索结果，搜索出错）-->
+<!--
+<scroll-view class='section'
+scroll-y
+scroll-top='100px'
+enable-back-to-top=true
+bindscrolltolower="refreshData"
+>-->
+<view class='product_card' wx:for="{{subject}}"  wx:key='book_id' bindtap='goBook_one' data-book-id="{{item.book_id}}">
+<view class='top'>
+<view class='userid'>
+ <image wx:if="{{ item.image_url1 != null }}" src='https://www.lichenyu666.top/{{item.image_url1}}' class='picture'/>
+  <text style='font-size:30rpx;color:gray;'>{{item.author}}</text>
+</view>
+ <view class='price'>¥{{item.price}}</view>
+ </view>
+ <view class='show'>
+  <view>
+  <image src='{{api+item.image_url1}}' class='book_picture' mode='aspectFill' style='width:150rpx;height:150rpx'>
+  </image>
+  </view>
+  <view class='book_name'>
+  <view>
+  <view class='title'><text>{{item.book_name}}\n</text></view>
+  <text style='font-size:30rpx;color:gray;'>{{item.author}}</text>
+  <view><text>{{item.press}}\n</text></view>
+  </view>
+</view>
+ </view>
+  </view>
+
+<!--</scroll-view>-->
+</view>
+<view wx:elif="{{QueryStatus==0}}"  class='NotFoundPage'>
+<view><image src="/imagess/fail.jpg" style="width: {{imagewidth}}*2rpx; height: {{imageheight}}px;" bindload="imageLoad"></image></view>
+<text>没有找到“{{mid}}“的相关结果，\n你该换个关键词啦~</text>
+</view>
+<view wx:else  class='ErrorPage'>
+<text>搜索出现错误，请重试</text>
+</view>
+</view>
+</view>

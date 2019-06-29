@@ -1,0 +1,45 @@
+.top{
+  display: flex;
+  flex-direction: row;
+}
+.userid{
+  display: flex;
+  flex-direction: row;
+  width:90%;
+}
+.price{
+  font-size: 40rpx;
+  margin-right: 20rpx;
+  width: 100rpx;
+  color: rgb(201, 71, 71);
+}
+.picture{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+.product_card{
+background-color: white;
+padding: 10px 10px 20px 10px;
+margin: 10px 25rpx 0 25rpx;
+font-size:20px;
+}
+.book{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  font-size: 35rpx;
+}
+.book text{
+  margin-bottom: 10rpx;
+}
+.book_comment{
+  display: flex;
+  flex-direction: column;
+  font-size: 35rpx;
+  margin-top: 10rpx;
+}
+.swiper {
+  width: 100%;
+}

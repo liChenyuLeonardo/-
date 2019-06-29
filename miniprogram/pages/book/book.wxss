@@ -1,0 +1,149 @@
+page {
+  background-color: rgb(249, 249, 249);
+  height:100%;
+}
+.searcharea{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 65rpx;
+  background-color:white;
+  margin-top: 10rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-bottom: 20rpx;
+}
+.liststyle_buttom{
+  height: 65rpx;
+  width: 550rpx;
+  background-color:white;
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+.liststyle_buttom image{
+  margin-left: 20rpx;
+  margin-right: 15rpx;
+}
+.section{
+  font-size:26px;
+  border: none;
+  height:100%;
+  overflow: auto;
+}
+.top{
+  display: flex;
+  flex-direction: row;
+}
+.userid{
+  display: flex;
+  flex-direction: row;
+  width:90%;
+}
+.price{
+   font-size: 40rpx;
+  margin-right: 20rpx;
+  width: 100rpx;
+  color: rgb(201, 71, 71);
+}
+.picture{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.book_name{
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  color: gray;
+  margin-left: 70rpx;
+  margin-top: 8rpx
+}
+.product_card{
+border-bottom: 1rpx solid gray(162, 212, 212);
+background-color: white;
+padding: 10px 10px 20px 10px;
+margin: 10px 25rpx 0 25rpx;
+height: 150rpx;
+font-size:20px;
+}
+.NotFoundPage{
+  background: rgb(249, 249, 249);
+  font-size: 20px;
+  color:black;
+}
+.NotFoundPage image{
+margin-left: 55rpx;
+margin-top: 50rpx;
+}
+.NotFoundPage text{
+display: flex;
+justify-content: center;
+margin-top: 40rpx;
+}
+.ErrorPage{
+  background: red;
+font-size: 20px;
+color: green;
+}
+.show{
+  display: flex;
+  flex-direction: row;
+}
+.show image{
+  margin-left: 10rpx;
+  margin-bottom: 7rpx;
+}
+.title{
+  font-size: 30rpx;
+  color: black;
+}
+.box{
+  margin-top: 15rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.active_red{color: black;font-size: 42rpx;font-weight: bold;}
+.active_time{color: black;font-size: 42rpx;font-weight: bold;}
+.active_suit{color: black;font-size: 42rpx;font-weight: bold;}
+.hot{
+  color: black;
+  width:100%;
+  font-size: 32rpx;
+  margin:10rpx 20rpx 10rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center
+}
+.select_box {    
+  background-color: rgb(247, 247, 247);   
+  margin-left: 70rpx; 
+  padding: 0 10rpx;    
+  width: 20%;    
+  position: absolute; 
+  z-index: 1;    
+  overflow: hidden;    
+  animation: myfirst 0.5s;
+} 
+@keyframes myfirst {    
+  from {
+     height: 0rpx;    
+     }     
+  to {       
+     height: 120rpx;    
+     }
+} 
+.select_one {    
+  height: 60rpx;    
+  line-height: 60rpx;    
+  border-bottom: 1px solid #ccc;
+}

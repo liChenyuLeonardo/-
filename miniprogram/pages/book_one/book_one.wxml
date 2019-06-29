@@ -1,0 +1,37 @@
+<view class='product_card'>
+  <view class='top'>
+    <view class='userid'>
+    <image src='/images/4.png' class='picture'></image>
+    <text style='font-size:30rpx;color:gray;'>{{list.nickname}}</text>
+  </view>
+  <view class='price'>¥ {{list.data.price}}</view>
+ </view>
+ <text style='display: flex; flex-direction: row-reverse; margin-right:20rpx; font-size:20rpx; color:gray; border-top: 1rpx solid gray;'>所在地：北京邮电大学沙河校区</text>
+ <text style='display: flex; flex-direction: row-reverse; margin-right:20rpx; font-size:20rpx; color:gray;'>发布时间：{{list.data.upload_time}}</text>
+ <view class='book'>
+  <text>书籍名：{{list.data.book_name}}</text>
+  <text>作者：{{list.data.author}}</text>
+  <text>出版商：{{list.data.press}}</text>
+  </view>
+  <view>
+  <swiper
+  class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" duration="{{duration}}" bindchange="bindchange"  circular="{{circular}}" style="height:{{imgheights[current]}}rpx;"
+>
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" mode="aspectFit" bindload="imageLoad" style="height:{{imgheights[current]}}rpx;width:{{imgwidth}}rpx;" />
+    </swiper-item>
+  </block>
+</swiper>
+ </view>
+ <view class='book_comment'>
+     <text style='width:150rpx'>描述：</text>
+     <text>{{list.data.description}}</text>
+  </view>
+</view>
+<view style='position:fixed;bottom:0;text-align:center;left:0;right:0;'>
+<view style='display:flex;flex-direction:row; justify-content: center;'>
+    <navigator url='/pages/chat/chat?book_name={{list.data.book_name}}&press={{list.data.press}}&price={{list.data.price}}&nickname={{list.data.author}}&user1_id={{list.data.userID}}' style='border-radius: 20rpx; width:220rpx;display:flex;flex-direction:column;justify-content: space-around; align-items:center;margin:20rpx;color:white;font-size:36rpx;background-color:rgb(250, 206, 10);'>聊一聊</navigator>
+    <navigator url='/pages/chat_list/chat_list' style='border-radius: 20rpx; width:220rpx;display:flex;flex-direction:column;justify-content: space-around; align-items:center;margin:20rpx;color:white;font-size:36rpx;background-color:rgb(201, 71, 71);'>我要预定</navigator>
+</view>
+</view>

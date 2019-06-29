@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="content">
+<form bindsubmit="submitdate" class="Form">
+<view class="title">
+  <view>书名：</view>
+  <view><input maxlength="20" bindinput="bNameInput" value='{{bName}}' placeholder="手动输入或扫描条码 " placeholder-style="color:rgb(99, 99, 99)"></input></view>
+  <view class="scan" bindtap="clickScan" style="width:38rpx;height:38rpx"><image src="/imagess/scanner.jpg" style='width: 50rpx; height: 50rpx;'></image></view>
+</view>
+
+<view class="title">
+  <view>价格：¥</view>
+  <input bindinput="priceInput" type="digit" value='{{price}}' placeholder="0.00" placeholder-style="color:rgb(99, 99, 99)"></input>
+</view>
+
+<textarea maxlength="50" bindinput="describeInput" value='{{describe}}' placeholder="对书籍进行描述吧……" placeholder-style="color:rgb(99,99,99)"></textarea>
+
+<view class="picture_list">
+
+    <view wx:for="{{upload_picture_list}}" class="picture_item" wx:key="{{index}}">
+      <image wx:if="{{item.upload_percent < 100}}" src="{{item.path}}" mode="aspectFill"></image>
+      <image wx:if="{{item.upload_percent == 100}}" src="{{item.path_server}}" mode="aspectFill"></image>
+      
+      <text class='del' bindtap='deleteImg' data-src='{{image}}' style='display:{{isDel}}' data-index="{{index}}">×</text>
+    </view>
+
+    <view class='picture_item'>
+      <view class="add-image" bindtap='uploadpic'>
+        <text>+</text>
+      </view>
+    </view>
+  </view>
+
+<view class="title">
+  <view>作者：</view>
+  <input maxlength="20" bindinput="authorInput" value='{{author}}'></input>
+</view>
+
+
+<view class="title">
+  <view>出版社：</view>
+  <input maxlength="15" bindinput="pNameInput" value='{{pName}}'></input>
+</view>
+
+<view class="title">
+  <view>新旧程度：</view>
+  <input maxlength="2" type="number" bindinput="NewInput" value='{{New}}' ></input>
+</view>
+
+
+
+
+<button form-type="submit">发布</button>
+</form>
+</view>

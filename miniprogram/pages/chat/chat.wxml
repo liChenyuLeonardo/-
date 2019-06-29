@@ -1,0 +1,36 @@
+<!--chat.wxml-->
+ <import src="../../components/bubble/bubble.wxml" />
+<view>
+<view wx:if="{{link_status==true}}">
+  <view  style='background: transparent; display: flex; flex-direction:row; margin:10rpx;border-style:solid;boder-width:thin thin thin thin; position:fixed;'>
+      <image style='width: 60px; height:80px; margin:0 20rpx;' src='/images/list.png'></image>
+    <view style='font-size:30rpx;color:rgb(115, 116, 121);padding-top:40rpx'>
+      <text>{{book_name}}\n</text>
+      <text style="font-size:20rpx;color:rgb(115,116,121)">{{book_author}}</text>
+    </view>
+    <text style='color:red; padding-top:50rpx; font-size:40rpx;margin-left:150rpx'>￥{{book_price}}</text>
+  </view>
+ </view>
+
+<view class="sendArea">
+  <view class="inputView">
+    <input value='{{msg}}' bindinput="onInput"></input>
+  </view>
+  <button bindtap='submitdate'>发送</button>
+</view>
+<!--记得把页面聚焦给做了-->
+<view>
+  <scroll-view
+  scroll-y
+  bindscrolltoupper="pullDownRefresh"
+  scroll-with-animation
+  scroll-top="{{scrollTop}}"
+    class='product'>
+    <view  wx:for = '{{list}}' wx:key = '{{item.msg_id}}'  >
+     <template  is="bubble" data="{{ ...item }}" />
+    </view>
+  </scroll-view>
+</view>
+
+
+</view>

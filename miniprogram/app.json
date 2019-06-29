@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/search_list/search_list",
+    "pages/chat/chat",
+    "pages/book_one/book_one",
+    "pages/list/list",
+    "pages/book/book",
+    "pages/two/two",
+    "pages/register/register",
+    "pages/release/release",
+    "pages/fail/fail",
+    "pages/trolley/trolley",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/changeInfo/changeInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "用户中心",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "主页",
+        "iconPath": "imagess/searchicon.jpg",
+        "selectedIconPath": "imagess/searchpress.jpg",
+        "pagePath": "pages/search_list/search_list"
+      },
+      {
+        "text": "消息",
+        "iconPath": "imagess/receiver.jpg",
+        "selectedIconPath": "imagess/receiver.jpg",
+        "pagePath": "pages/list/list"
+      },
+      {
+        "text": "发布",
+        "iconPath": "imagess/releaseicon.jpg",
+        "selectedIconPath": "imagess/releasepress.jpg",
+        "pagePath": "pages/release/release"
+      },
+      {
+        "text": "我的",
+        "iconPath": "imagess/homeicon.jpg",
+        "selectedIconPath": "imagess/homepress.jpg",
+        "pagePath": "pages/two/two"
+      }
+    ],
+    "color": "#a9b7b7",
+    "selectedColor": "#000"
+  },
+  "sitemapLocation": "sitemap.json"
+}

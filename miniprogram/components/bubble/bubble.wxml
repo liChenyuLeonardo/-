@@ -1,0 +1,25 @@
+<!--components/bubble /bubble.wxml-->
+<template name="bubble">
+    <view id="{{msg_id}}" class="bubble-container" wx:if="{{ msgType==1}}">
+      <view class="icon">
+        <view class="caret-left"></view>
+        <view class="photo">
+          <image src="{{ url }}" style="width:36px;height:36px;"></image>
+        </view>
+      </view>
+      <view class="content">
+        <text>{{text}}</text>
+      </view>
+    </view>
+    <view id="{{msg_id}}" class="container-right" wx:if="{{ msgType==0 }}">
+      <view class="content-right">
+        <text>{{ text }}</text>
+      </view> 
+      <view class="icon-right">
+        <view class="photo">
+          <image src="{{ url }}" style="width:36px;height:36px;"></image>
+        </view>
+        <view class="caret-right"></view>
+      </view>
+    </view>
+</template>

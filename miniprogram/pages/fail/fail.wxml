@@ -1,0 +1,7 @@
+<view class="warning_1">登录失败</view>
+<view class="warning_2">错误代码：<text>{{ErrorStaus}}</text></view>
+<view class="warning_2">请关闭小程序后重新登录</view>
+<view class="warning_2">或联系管理员</view>
+<view class="Image">
+  <image src="/imagess/fail.jpg" style="width: {{imagewidth}}*2rpx; height: {{imageheight}}px;" bindload="imageLoad"></image>
+</view>

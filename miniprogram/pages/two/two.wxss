@@ -1,0 +1,72 @@
+page {
+  width: 100%;
+  background-color: rgb(249, 249, 249)
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  height: 230rpx;
+  border-top: 1rpx solid rgb(235, 235, 235);
+  border-bottom: 1rpx solid rgb(235, 235, 235);
+  background-color: #fff;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 60rpx;
+  border-radius: 50%;
+}
+.userinfo-text {
+  margin-top: 60rpx;
+}
+ 
+.userinfo-nickname {
+  color:black;
+  margin-top: 120rpx;
+  font-size: 1.25rem;
+}
+
+.userinfo-welcome {
+  font-size: 0.7rem;
+  color:rgb(185, 150, 33);
+}
+
+.style_3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90rpx;
+  background-color:white;
+  border-bottom: 1rpx solid rgb(235, 235, 235);
+  font-size: 31rpx;
+}
+
+.style_4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90rpx;
+  background-color:white;
+  font-size: 31rpx;
+}
+
+.part_1 {
+  margin-top: 45rpx;
+  padding-left: 32rpx;
+  border-top: 1rpx solid rgb(235, 235, 235);
+  border-bottom: 1rpx solid rgb(235, 235, 235);
+  background-color: #fff;
+}
+
+.part_1 text{
+  margin-left: 480rpx;
+  align-content: right;
+  color: rgb(224, 224, 224);
+}
+
+.part_1 image{
+  padding-right: 28rpx;
+}

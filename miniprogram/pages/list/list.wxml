@@ -1,0 +1,32 @@
+<!-- list.wxml -->
+<view class="list-container">
+  <view 
+    wx:for="{{ friends }}" 
+    wx:key="friends{{ index }}" 
+    class="list-row-wrapper" 
+    hover-class="list-row-hover" 
+    hover-stay-time="50"
+    data-user="{{ item }}" 
+   >
+    <navigator url='/pages/chat/chat?chat_id={{item.chat_id}}&nickname={{item.Nickname}}&talkerID={{item.talkerID}}' class="list-row">
+      <view class="list-icon">
+        <view class="list-photo">
+          <image src="{{ item.photo }}" style="width: 50px; height: 50px;"></image>
+        </view>
+        <view wx:if="{{ item.nums > 0 }}" class="message-dot"></view>
+      </view>
+      <view class="list-content">
+        <view class="list-content-layout">
+          <view class="list-content-name">
+            <text class="list-content-title">{{ (item.user_status == 404) ? '用户已注销 ': item.Nickname }}</text>
+           <!-- <text class="list-content-time">{{ item.time }}</text>-->
+          </view>
+          <view class="list-content-brief">
+            <text class="{{(item.msg_status==1) ? 'red' : ''}}">{{(item.msg_status==1)?"您有新消息啦":"所有消息都已读"}}</text>
+          </view>
+        </view>
+       </view>
+    </navigator>
+  </view>
+  <text class='list-bottom'>没有更多消息啦~</text>
+</view>

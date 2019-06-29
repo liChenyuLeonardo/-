@@ -1,0 +1,12 @@
+<view class="Image">
+  <image style="width: 500rpx; height: 751rpx;" src="/imagess/welcome.gif"></image>
+</view>
+<view class="logo_area">
+  <view class="logo">
+    <image src="/imagess/logo.jpg" style="width:100rpx; height: 100rpx;"></image>
+  </view>
+  <view class="name">
+    <view><text>书 香 邮 苑</text></view>
+    <view class="name_2" style="width:270rpx;">北邮第一个二手书交易平台</view>
+  </view>
+</view>

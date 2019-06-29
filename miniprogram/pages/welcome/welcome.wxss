@@ -1,0 +1,32 @@
+.Image {
+  display: flex;
+  justify-content: center;
+  margin-top: 12rpx;
+}
+
+.logo_area {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 700rpx;
+  left: 180rpx;
+}
+
+.logo {
+  margin-right: 20rpx;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.name_2 {
+  display: flex;
+  justify-content: center;
+  font-size: 23rpx;
+  border-top: 3rpx solid rgba(0, 0, 0, 0.4);
+ 
+}
